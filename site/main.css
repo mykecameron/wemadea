@@ -33,3 +33,14 @@ body {
   color: white;
   cursor: pointer;
 }
+
+#playlist {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  margin-left: -350px;
+}
+
+#playlist iframe:nth-child(2){
+  margin-left: 100px;
+}
