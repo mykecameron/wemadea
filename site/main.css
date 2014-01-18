@@ -1,0 +1,35 @@
+body {
+  background-color: grey;
+}
+
+#image-container, #overlay {
+  width: 950px;
+  height: 1000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -475px;
+}
+
+#overlay img {
+}
+
+#image-container {
+  background-image: url('images/cactus-1.jpg');
+}
+
+#overlay {
+  background-image: url('images/overlay.png');
+}
+
+#image-controls {
+  padding-top: 250px;
+  width: 950px;
+  text-align: center;
+}
+
+#image-controls li {
+  display: inline;
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+}
