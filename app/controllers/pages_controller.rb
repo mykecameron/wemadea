@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def index
     @playlists = playlists
+    @images = Image.all
   end
 
   private

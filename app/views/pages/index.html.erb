@@ -4,9 +4,9 @@
 <div id='overlay'>
   <div id='image-controls'>
     <ul>
-      <li data-image="flower.jpg">&bull;</li>
-      <li data-image="Mushroom-Cloud.jpg">&bull;</li>
-      <li data-image="cactus-1.jpg">&bull;</li>
+      <% @images.each do |image| %>
+        <li data-image="<%= image.image_file.url %>">&bull;</li>
+      <% end %>
     </ul>
   </div>
 </div>
