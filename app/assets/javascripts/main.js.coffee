@@ -7,3 +7,13 @@ $(document).ready ->
   $('#image-controls li').on 'click', (event) ->
     image = $(event.target).data 'image'
     setImage image
+
+  setStory = (story) ->
+    promise = $.get "/stories/#{story}"
+    promise.done (story) =>
+      $('#story').html story.body
+
+  $('#story-controls li').on 'click', (event) ->
+    story = $(event.target).data 'story_id'
+    setStory story
+

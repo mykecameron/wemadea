@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def index
     @playlists = playlists
     @images = Image.all
+    @stories = Story.all
   end
 
   private
