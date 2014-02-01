@@ -13,8 +13,9 @@
 
 <div id='other-things'>
   <div id='playlist'>
-    <iframe width="300" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/17359417&amp;color=ff0000&amp;auto_play=false&amp;show_artwork=true"></iframe>
-    <iframe width="300" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/17359417&amp;color=ff0000&amp;auto_play=false&amp;show_artwork=true"></iframe>
+    <% @playlists.each do |playlist| %>
+      <%= playlist.embed_code.html_safe %>
+    <% end %>
   </div>
 
   <div id='story'>
