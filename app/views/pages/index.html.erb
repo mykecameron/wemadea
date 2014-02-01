@@ -19,7 +19,9 @@
   </div>
 
   <div id='story'>
-    <%= @stories.first.body.html_safe %>
+    <% if @stories.first %>
+      <%= @stories.first.body.html_safe %>
+    <% end %>
   </div>
 
   <div id='story-controls' class='controls'>
