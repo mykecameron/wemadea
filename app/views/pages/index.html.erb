@@ -2,6 +2,10 @@
 </div>
 
 <div id='overlay'>
+  <div id='main-nav'>
+    <a href='#playlist'><%= fa_icon 'music 2x', class: 'white music' %></a>
+    <a href='#story'><%= fa_icon 'file-text-o 2x', class: 'white stories' %></a>
+  </div>
   <div id='image-controls' class='controls'>
     <ul>
       <% @images.each do |image| %>
