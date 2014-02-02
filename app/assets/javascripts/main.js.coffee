@@ -11,7 +11,8 @@ $(document).ready ->
   setStory = (story) ->
     promise = $.get "/stories/#{story}"
     promise.done (story) =>
-      $('#story').html story.body
+      body = "<p>#{story.body.split("\n").join('</p><p>')}</p>"
+      $('#story').html body
 
   $('#story-controls li').on 'click', (event) ->
     story = $(event.target).data 'story_id'

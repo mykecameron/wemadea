@@ -24,7 +24,7 @@
 
   <div id='story'>
     <% if @stories.first %>
-      <%= @stories.first.body.html_safe %>
+      <%= simple_format @stories.first.body.html_safe %>
     <% end %>
   </div>
 
