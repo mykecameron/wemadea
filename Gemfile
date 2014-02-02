@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'heroku'
 gem 'paperclip'
 gem 'aws-sdk'
+gem "font-awesome-rails"
 
 group :doc do
   gem 'sdoc', require: false

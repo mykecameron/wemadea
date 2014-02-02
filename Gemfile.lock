@@ -78,6 +78,8 @@ GEM
     erubis (2.7.0)
     excon (0.25.3)
     execjs (2.0.2)
+    font-awesome-rails (4.0.3.1)
+      railties (>= 3.2, < 5.0)
     formtastic (2.3.0.rc2)
       actionpack (>= 3.0)
     has_scope (0.6.0.rc)
@@ -200,6 +202,7 @@ DEPENDENCIES
   aws-sdk
   coffee-rails (~> 4.0.0)
   dotenv
+  font-awesome-rails
   heroku
   jbuilder (~> 1.2)
   jquery-rails
