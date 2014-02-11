@@ -22,6 +22,10 @@
     <% end %>
   </div>
 
+  <div id='youtube'>
+    <iframe width="480" height="360" src="//www.youtube.com/embed/lV5r9lHoMFI" frameborder="0" allowfullscreen></iframe>
+  </div>
+
   <div id='story'>
     <% if @stories.first %>
       <%= simple_format @stories.first.body.html_safe %>
