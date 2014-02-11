@@ -9,7 +9,7 @@
   <div id='image-controls' class='controls'>
     <ul>
       <% @images.each do |image| %>
-        <li data-image="<%= image.image_file.url %>">&bull;</li>
+        <li data-image="<%= image.image_file.url(:background) %>">&bull;</li>
       <% end %>
     </ul>
   </div>
