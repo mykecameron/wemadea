@@ -46,5 +46,11 @@
       <% end %>
     </ul>
   </div>
+
+  <% if @thanks %>
+    <div id='thanks'>
+      <%= @thanks.content.html_safe %>
+    </div>
+  <% end %>
 </div>
 
