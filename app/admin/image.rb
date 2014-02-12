@@ -1,5 +1,5 @@
 ActiveAdmin.register Image do
-  permit_params :image_file
+  permit_params :image_file, :credit
 
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs do
