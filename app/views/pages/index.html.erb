@@ -17,6 +17,12 @@
 </div>
 
 <div id='other-things'>
+  <% if @about %>
+    <div id='about'>
+      <%= @about.content.html_safe %>
+    </div>
+  <% end %>
+
   <div id='playlist'>
     <% @playlists.each do |playlist| %>
       <%= playlist.embed_code.html_safe %>
@@ -40,7 +46,5 @@
       <% end %>
     </ul>
   </div>
-
-
 </div>
 

@@ -3,6 +3,7 @@ class PagesController < ApplicationController
     @playlists = playlists
     @images = Image.all
     @stories = Story.all
+    @about = About.order('id DESC').first
   end
 
   private
