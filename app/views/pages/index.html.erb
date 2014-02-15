@@ -34,15 +34,23 @@
   </div>
 
   <div id='story'>
-    <% if @stories.first %>
-      <%= simple_format @stories.first.body.html_safe %>
-    <% end %>
+    <div class='title'>
+      <%= @stories.first.title %>
+    </div>
+    <div class='author'>
+      <%= @stories.first.author %>
+    </div>
+    <div class='content'>
+      <% if @stories.first %>
+        <%= simple_format @stories.first.body.html_safe %>
+      <% end %>
+    </div>
   </div>
 
   <div id='story-controls' class='controls'>
     <ul>
       <% @stories.each do |story| %>
-        <li data-story_id="<%= story.id %>">&bull;</li>
+        <li data-story_id="<%= story.id %>" data-author="<%= story.author %>" data-title="<%= story.title %>">&bull;</li>
       <% end %>
     </ul>
   </div>
